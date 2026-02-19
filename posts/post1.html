@@ -1,0 +1,64 @@
+### BT 개념 참고자료
+
+- https://velog.io/@ryan_ur/2-11%EA%B0%95-%ED%96%89%EB%8F%99%ED%8A%B8%EB%A6%AC-%EB%AA%A8%EB%8D%B8%EC%9D%98-%EC%9D%B4%ED%95%B4
+- https://changun516.tistory.com/249
+- https://velog.io/@delicate1290/ROS2-Behavior-Tree
+- 책 (Behavior Trees in Robotics and AI) : https://arxiv.org/pdf/1709.00084v4
+- https://lifeisforu.tistory.com/327
+
+### BT 코드 참고자료
+
+- https://soohwan-justin.tistory.com/97
+- https://github.com/BehaviorTree/BehaviorTree.CPP
+- https://10-min-e.tistory.com/82
+
+---
+
+### 정리
+
+Node
+
+- Control Node - 여러 자식(child)을 가지고 “흐름/분기/병렬” 등 제어로직을 담당
+    - Sequence :
+    - Fallback :
+    - Parallel :
+    - Sequence Start :
+- Decorator Node - 자식이 1개만 있고, 그 자식의 결과를 뒤집거나 반복하거나 조건부 실행 등 감싸서 수
+    - Inverter, ForceSuccess, ForceFailure, Repeat, RetryUntilSuccessful, KeepRunningUntilFailure, Delay, Runonce ..
+- Leaf Node - 자식이 없는 노드
+    - Condition Node
+    - Action Node
+        - SyncActionNode : `tick()`이 호출되면 **그 자리에서 일을 끝내고** 바로 `SUCCESS` 또는 `FAILURE`를 반환하는 액션.
+        - StatefulActionNode : **여러 tick에 걸쳐** 진행되는 액션을 위한 클래스. BT가 매 tick 호출할 때마다 “진행중인지/끝났는지”를 판단해 `RUNNING/SUCCESS/FAILURE`를 반환. BT가 흐름상 이 노드를 중간에 멈춰야 하면 `halt()`가 호출되고, 그때 **정리/취소(onHalted)** 를 할 수 있음.
+            - **구조**
+                - `onStart()`
+                    - 처음 실행될 때 1회
+                    - “작업 시작” (예: action goal 보내기)
+                    - 보통 `RUNNING` 반환
+                - `onRunning()`
+                    - 실행 중 매 tick 호출
+                    - “진행 체크/완료 체크”
+                    - `RUNNING` 계속 or 완료 시 `SUCCESS/FAILURE`
+                - `onHalted()`
+                    - 트리에서 이 노드를 중단할 때 호출
+                    - 여기서 cancel/stop/리소스 정리
+        - ..
+
+---
+
+1. parallel : 자식 노드가 동시에 실행되도록 하는 기능ㅇ ㅣ 있음. 
+    - 노드들 중 하나라도 False가 발생하면, 그 즉시 모든 자식노드들의 실행을 멈춤 → 상위 노드에 False를 반환
+    - 첫번째 노드가 True를 반환할 경우 종료하도록 설정 가능
+    
+    photo ex)
+    
+    ![image.png](attachment:73de2400-f5ed-44a4-9072-44c185dedd97:image.png)
+    
+
+---
+
+### ROS 2 개념
+
+- Service 개념
+    - https://velog.io/@i_robo_u/%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%99%80-%ED%95%A8%EA%BB%98%ED%95%98%EB%8A%94-ROS2-Humble-Service-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-ROS2-%EB%AA%85%EB%A0%B9%EC%96%B4-4
+    - https://hyundoil.tistory.com/429
