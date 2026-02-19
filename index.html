@@ -18,7 +18,7 @@
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
-					<!-- TODO: Replace images/avatar.jpg with your own photo (keep filename for convenience). -->
+					<!-- TODO: Replace images/profile2.jpg with your own photo (keep filename for convenience). -->
 					<a href="#top" class="image avatar"><img src="images/profile2.jpg" alt="Minho Lee avatar" /></a>
 					<h1>
 						<strong>Minho Lee (이민호)</strong><br />
@@ -49,8 +49,8 @@
 						<ul class="actions">
 							<!-- TODO: Put your CV PDF in repo (e.g., /assets/Minho_Lee_CV.pdf) and update the link -->
 							<li><a href="assets/Minho_Lee_CV.pdf" class="button" target="_blank" rel="noopener">Download CV</a></li>
-							<!-- TODO: Update to your main projects page if you make one -->
 							<li><a href="#two" class="button">View Projects</a></li>
+							<li><a href="#posts" class="button">View Posts</a></li>
 						</ul>
 					</section>
 
@@ -74,7 +74,6 @@
 									recoverable task execution.
 								</p>
 								<ul class="actions small">
-									<!-- TODO: replace # with your repo/video links -->
 									<li><a href="#" class="button small">Repo</a></li>
 									<li><a href="#" class="button small">Video</a></li>
 								</ul>
@@ -161,8 +160,49 @@
 						</div>
 
 						<ul class="actions">
-							<!-- If you don't have a separate portfolio page, you can delete this button -->
 							<li><a href="other.html" class="button">Full Portfolio</a></li>
+						</ul>
+					</section>
+
+				<!-- Posts / Dev Log -->
+					<section id="posts">
+						<h2>Dev Log / Posts</h2>
+						<p>
+							Short write-ups about robotics development, experiments, and lessons learned.
+						</p>
+
+						<div class="row">
+							<!-- Post 1 -->
+							<article class="6u 12u$(xsmall) work-item">
+								<a href="posts/2026-02-19-traversability.html" class="image fit thumb">
+									<img src="images/thumbs/post-01.jpg" alt="Traversability costmap post thumbnail" />
+								</a>
+								<h3>Traversability → Costmap on Jetson (Latency Notes)</h3>
+								<p>
+									TensorRT inference + RGB-D fusion pipeline, bottlenecks and profiling results.
+								</p>
+								<ul class="actions small">
+									<li><a href="posts/2026-02-19-traversability.html" class="button small">Read</a></li>
+								</ul>
+							</article>
+
+							<!-- Post 2 -->
+							<article class="6u$ 12u$(xsmall) work-item">
+								<a href="posts/2026-02-10-bt-recovery.html" class="image fit thumb">
+									<img src="images/thumbs/post-02.jpg" alt="Behavior tree recovery patterns thumbnail" />
+								</a>
+								<h3>BT Recovery Patterns I Actually Use</h3>
+								<p>
+									Sequence/Fallback/RetryUntilSuccessful patterns for reliable task completion.
+								</p>
+								<ul class="actions small">
+									<li><a href="posts/2026-02-10-bt-recovery.html" class="button small">Read</a></li>
+								</ul>
+							</article>
+						</div>
+
+						<ul class="actions">
+							<li><a href="posts/index.html" class="button">All Posts</a></li>
 						</ul>
 					</section>
 
@@ -192,17 +232,14 @@
 								<ul class="labeled-icons">
 									<li>
 										<h3 class="icon fa-map-marker"><span class="label">Location</span></h3>
-										<!-- TODO: Update location -->
 										Incheon, South Korea
 									</li>
 									<li>
 										<h3 class="icon fa-university"><span class="label">Affiliation</span></h3>
-										<!-- TODO: Update to your exact lab/department wording -->
 										Inha University · Robotics / Autonomous Systems
 									</li>
 									<li>
 										<h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
-										<!-- TODO: Put your email -->
 										<a href="mailto:mhlee00@inha.edu">mhlee00@inha.edu</a>
 									</li>
 								</ul>
@@ -216,9 +253,8 @@
 			<footer id="footer">
 				<div class="inner">
 					<ul class="icons">
-						<!-- TODO: Replace # with your links (delete what you don't use) -->
 						<li><a href="https://github.com/minho0" class="icon fa-github" target="_blank" rel="noopener"><span class="label">Github</span></a></li>
-						<li><a href="mailto:YOUR_EMAIL@example.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+						<li><a href="mailto:mhlee00@inha.edu" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 						<li><a href="#" class="icon fa-youtube" target="_blank" rel="noopener"><span class="label">YouTube</span></a></li>
 						<li><a href="#" class="icon fa-linkedin" target="_blank" rel="noopener"><span class="label">LinkedIn</span></a></li>
 					</ul>
@@ -240,5 +276,3 @@
 
 	</body>
 </html>
-
-
