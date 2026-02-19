@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Traversability → Costmap on Jetson | Minho Lee</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+</head>
+<body>
+
+  <div id="main">
+    <section>
+      <header class="major">
+        <h2>Traversability → Costmap on Jetson (Latency Notes)</h2>
+      </header>
+
+      <p><b>Date:</b> 2026-02-19</p>
+      <hr />
+
+      <h3>Summary</h3>
+      <p>
+        This post summarizes a real-time pipeline that runs on embedded GPUs (Jetson),
+        performing on-device traversability inference and generating costmaps/occupancy
+        grids for navigation.
+      </p>
+
+      <h3>Pipeline</h3>
+      <ul>
+        <li>RGB-D input → preprocessing</li>
+        <li>TensorRT inference → traversability logits</li>
+        <li>Point projection + filtering</li>
+        <li>2D costmap / occupancy generation</li>
+        <li>ROS 2 publish (Nav2 integration)</li>
+      </ul>
+
+      <h3>Notes</h3>
+      <ul>
+        <li>Profile end-to-end latency (camera → publish)</li>
+        <li>Separate GPU inference time vs CPU post-processing</li>
+        <li>Prefer fixed-size buffers to reduce allocations</li>
+      </ul>
+
+      <ul class="actions">
+        <li><a href="../index.html#posts" class="button">← Back</a></li>
+        <li><a href="index.html" class="button">All Posts</a></li>
+      </ul>
+    </section>
+  </div>
+
+</body>
+</html>
