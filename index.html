@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Minho Lee (이민호) | Robotics</title>
-  <meta name="description" content="Minho Lee — Robotics engineer and M.S. student at Inha University working on reliable service-robot systems." />
+  <meta name="description" content="Minho Lee — M.S. candidate at Inha University working on robot task planning and system integration." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,10 +17,10 @@
 
   <main class="page">
     <section class="profile">
-      <img class="avatar" src="images/profile2.jpg" alt="Minho Lee" />
+      <img class="avatar" src="images/profile-job.jpg" alt="Minho Lee" />
       <h1>Minho Lee <span>이민호</span></h1>
-      <p class="role">Robotics Engineer · M.S. Student</p>
-      <p class="place">Inha University · Incheon, South Korea</p>
+      <p class="role">Robot Task Planning · System Integration</p>
+      <p class="place">M.S. Candidate, Inha University · Expected Feb. 2027</p>
 
       <div class="social" aria-label="Links">
         <a href="https://github.com/minho0" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
@@ -34,82 +34,144 @@
     </nav>
 
     <section class="panel is-active" id="about">
-      <div class="section">
+      <section class="section intro">
         <p class="eyebrow">ABOUT</p>
-        <h2>I build reliable robot systems for real-world autonomy.</h2>
+        <h2>Building robot systems that can understand situations, recover from failures, and finish long-horizon tasks.</h2>
         <p class="lead">
-          I work on service-robot software stacks with an emphasis on robust task execution and real-time perception.
-          My interests include ROS 2-based navigation, RGB-D and point-cloud perception, mapping, and behavior-tree-driven
-          task execution with recovery.
+          I am an M.S. candidate in Electrical and Computer Engineering at Inha University, majoring in Future Vehicle.
+          My research focuses on robot task planning and system integration for complex real-world environments.
+          I am especially interested in modularizing HRI, perception, navigation, and manipulation capabilities and
+          coordinating them through Behavior Tree-based execution with explicit preconditions, success conditions,
+          failure reasons, and recovery policies.
         </p>
-      </div>
+      </section>
 
-      <div class="section">
-        <p class="eyebrow">INTERESTS</p>
+      <section class="section">
+        <p class="eyebrow">HIGHLIGHTS</p>
+        <div class="stats">
+          <div class="stat"><strong>4th</strong><span>RoboCup@Home 2026 OPL</span></div>
+          <div class="stat"><strong>570 → 100 ms</strong><span>Traversability inference</span></div>
+          <div class="stat"><strong>≈150 ms</strong><span>End-to-end costmap pipeline</span></div>
+          <div class="stat"><strong>93.5%</strong><span>Automated crane grasp success</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="eyebrow">TECH STACK</p>
         <div class="tags">
-          <span>ROS 2 System Integration</span>
-          <span>Behavior Tree</span>
-          <span>Failure Recovery</span>
-          <span>Navigation &amp; Mapping</span>
-          <span>RGB-D / Point Cloud</span>
-          <span>On-device AI</span>
+          <span>Python</span><span>C++</span><span>ROS 2</span><span>BehaviorTree.CPP</span>
+          <span>PyTorch</span><span>ONNX</span><span>TensorRT</span><span>Docker</span>
+          <span>Linux</span><span>Jetson AGX Orin</span><span>RGB-D</span><span>LiDAR</span><span>Point Cloud</span>
         </div>
-      </div>
+      </section>
 
-      <div class="section split">
+      <section class="section timeline-section">
+        <p class="eyebrow">EXPERIENCE</p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="date">2025.08 — 2026.07</div>
+            <div>
+              <h3>Team Lead · Inha-United RoboCup@Home</h3>
+              <p>Task planning and whole-system integration for a dual-arm home-service robot.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="date">2024.01 — 2024.06</div>
+            <div>
+              <h3>Exchange Student · IPSA, France</h3>
+              <p>Institut Polytechnique des Sciences Avancées.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section two-col">
         <div>
-          <p class="eyebrow">HIGHLIGHT</p>
-          <h3>RoboCup@Home 2026</h3>
-          <p>Open Platform League · 4th Place · Team Inha United @Home</p>
+          <p class="eyebrow">AWARDS</p>
+          <h3>RoboCup@Home 2026 OPL</h3>
+          <p>Finalist · 4th place · five home-service missions and the final round.</p>
+          <h3>Corporate Demand-Oriented Design Competition</h3>
+          <p>Gold Award · lightweight UAM/PAV mobility frame design and fabrication.</p>
         </div>
         <div>
-          <p class="eyebrow">CONTACT</p>
-          <h3>mhlee00@inha.edu</h3>
-          <p>Incheon, South Korea</p>
+          <p class="eyebrow">PUBLICATION</p>
+          <h3>Design and Implementation of an Automated Crane System for Container Loading and Unloading in Ports</h3>
+          <p><em>Drive &amp; Control</em>, Mar. 2025 · Second author.</p>
         </div>
-      </div>
+      </section>
     </section>
 
     <section class="panel" id="projects">
-      <div class="section">
+      <section class="section projects-wrap">
         <p class="eyebrow">SELECTED PROJECTS</p>
-        <div class="projects">
-          <article class="project">
-            <img src="images/thumbs/01.jpg" alt="RB-Y1 home service robot" loading="lazy" />
-            <div>
-              <h3>RB-Y1 Home-Service Robot System</h3>
-              <p>End-to-end integration of perception, navigation, manipulation, HRI, and recoverable task execution for RoboCup@Home.</p>
-            </div>
-          </article>
 
-          <article class="project">
-            <img src="images/thumbs/02.jpg" alt="Traversability costmap pipeline" loading="lazy" />
+        <article class="project-card featured">
+          <div class="project-head">
             <div>
-              <h3>Traversability → Costmap Pipeline</h3>
-              <p>On-device inference and real-time costmap generation from RGB-D data for embedded robotic platforms.</p>
+              <p class="project-meta">INHA UNIVERSITY · 2025.08 — 2026.07</p>
+              <h2>RoboCup@Home Service Robot System Integration</h2>
             </div>
-          </article>
+            <span class="badge">Team Lead</span>
+          </div>
+          <p>
+            Integrated HRI, perception, navigation, and manipulation on Rainbow Robotics RB-Y1 using ROS 2 and a hierarchical Behavior Tree.
+            Natural-language commands were decomposed with onboard Qwen3-VL and a cloud LLM, while execution results were checked against
+            preconditions, success conditions, and failure reasons. Recovery logic handled re-search, retry, and alternative actions.
+          </p>
+          <div class="project-result">RoboCup@Home 2026 OPL · Finalist · 4th Place</div>
+          <div class="tags small"><span>ROS 2</span><span>Behavior Tree</span><span>LLM</span><span>Recovery</span><span>RB-Y1</span></div>
+          <a class="text-link" href="https://news.ifm.kr/news/articleView.html?idxno=474597" target="_blank" rel="noopener">Related news <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </article>
 
-          <article class="project">
-            <img src="images/thumbs/03.jpg" alt="Hybrid 2D 3D mapping" loading="lazy" />
+        <article class="project-card">
+          <div class="project-head">
             <div>
-              <h3>Hybrid 2D–3D Topometric Mapping</h3>
-              <p>RGB-D, LiDAR, and odometry-based mapping for stable localization and navigation in cluttered environments.</p>
+              <p class="project-meta">KOREAN AIR · 2025.03 — 2026.12</p>
+              <h2>Aircraft Inspection Robot SLAM Evaluation Framework</h2>
             </div>
-          </article>
+          </div>
+          <p>
+            Developed a SLAM evaluation framework for GNSS-denied aircraft inspection environments. The framework combines map consistency
+            against an aircraft design model, segment-wise scan-to-map error analysis, and external-camera robot monitoring to identify when
+            and where localization errors accumulate.
+          </p>
+          <div class="tags small"><span>SLAM Evaluation</span><span>LiDAR</span><span>IoU</span><span>Chamfer Distance</span><span>External Camera</span></div>
+        </article>
 
-          <article class="project">
-            <img src="images/thumbs/04.jpg" alt="Behavior tree task execution" loading="lazy" />
+        <article class="project-card">
+          <div class="project-head">
             <div>
-              <h3>Behavior Tree Task Execution</h3>
-              <p>Interpretable high-level task control with bounded retries and recovery-oriented execution patterns.</p>
+              <p class="project-meta">INHA UNIVERSITY · 2025.03 — 2025.07</p>
+              <h2>Off-road Traversability Costmap Framework</h2>
             </div>
-          </article>
-        </div>
-      </div>
+          </div>
+          <p>
+            Converted pixel-wise traversability predictions from synchronized RGB-D and odometry data into a robot-centric 2D costmap for the
+            ROS 2 navigation stack. Reorganized the pipeline into ROS 2 nodes and optimized the PyTorch model through ONNX and TensorRT for Jetson AGX Orin.
+          </p>
+          <div class="project-result">Inference: ~570 ms → ~100 ms · Full costmap pipeline: ~150 ms</div>
+          <div class="tags small"><span>ROS 2</span><span>TensorRT</span><span>Jetson AGX Orin</span><span>Boston Dynamics Spot</span><span>RGB-D</span></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <div>
+              <p class="project-meta">DRIVE &amp; CONTROL · 2025.03</p>
+              <h2>Automated Crane System for Container Handling</h2>
+            </div>
+            <span class="badge">2nd Author</span>
+          </div>
+          <p>
+            Integrated YOLOv10-based container detection, a 6-DoF robot arm, and a custom gripper for automated container alignment and grasping.
+            Camera-to-robot coordinate transformation enabled precise alignment between the manipulator and target containers.
+          </p>
+          <div class="project-result">mAP@50 98% · Recall 96% · 200 trials · Grasp success 93.5%</div>
+          <div class="tags small"><span>YOLOv10</span><span>Manipulation</span><span>Coordinate Transform</span><span>Vision</span></div>
+        </article>
+      </section>
     </section>
 
-    <footer>© <span id="year"></span> Minho Lee</footer>
+    <footer>© <span id="year"></span> Minho Lee · mhlee00@inha.edu</footer>
   </main>
 
   <script src="index.js"></script>
