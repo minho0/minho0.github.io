@@ -105,84 +105,92 @@
       <section class="section projects-wrap">
         <p class="eyebrow">SELECTED PROJECTS</p>
 
-        <article class="project-card featured">
+        <article class="project-row">
           <div class="project-photo" aria-label="RoboCup project photo placeholder">
             <i class="fa-regular fa-image"></i>
             <span>RoboCup@Home project photo</span>
           </div>
-          <div class="project-head">
-            <div>
-              <p class="project-meta">INHA UNIVERSITY · 2025.08 — 2026.07</p>
-              <h2>RoboCup@Home Service Robot System Integration</h2>
+          <div class="project-content">
+            <div class="project-head">
+              <div>
+                <p class="project-meta">INHA UNIVERSITY · 2025.08 — 2026.07</p>
+                <h2>RoboCup@Home Service Robot System Integration</h2>
+              </div>
+              <span class="badge">Team Lead</span>
             </div>
-            <span class="badge">Team Lead</span>
+            <p>
+              Integrated HRI, perception, navigation, and manipulation on Rainbow Robotics RB-Y1 using ROS 2 and a hierarchical Behavior Tree.
+              Natural-language commands were decomposed with onboard Qwen3-VL and a cloud LLM, while execution results were checked against
+              preconditions, success conditions, and failure reasons. Recovery logic handled re-search, retry, and alternative actions.
+            </p>
+            <div class="project-result">RoboCup@Home 2026 OPL · Finalist · 4th Place</div>
+            <div class="tags small"><span>ROS 2</span><span>Behavior Tree</span><span>LLM</span><span>Recovery</span><span>RB-Y1</span></div>
+            <a class="text-link" href="https://news.ifm.kr/news/articleView.html?idxno=474597" target="_blank" rel="noopener">Related news <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
-          <p>
-            Integrated HRI, perception, navigation, and manipulation on Rainbow Robotics RB-Y1 using ROS 2 and a hierarchical Behavior Tree.
-            Natural-language commands were decomposed with onboard Qwen3-VL and a cloud LLM, while execution results were checked against
-            preconditions, success conditions, and failure reasons. Recovery logic handled re-search, retry, and alternative actions.
-          </p>
-          <div class="project-result">RoboCup@Home 2026 OPL · Finalist · 4th Place</div>
-          <div class="tags small"><span>ROS 2</span><span>Behavior Tree</span><span>LLM</span><span>Recovery</span><span>RB-Y1</span></div>
-          <a class="text-link" href="https://news.ifm.kr/news/articleView.html?idxno=474597" target="_blank" rel="noopener">Related news <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </article>
 
-        <article class="project-card">
+        <article class="project-row">
           <div class="project-photo" aria-label="Aircraft inspection project photo placeholder">
             <i class="fa-regular fa-image"></i>
             <span>Aircraft inspection project photo</span>
           </div>
-          <div class="project-head">
-            <div>
-              <p class="project-meta">KOREAN AIR · 2025.03 — 2026.12</p>
-              <h2>Aircraft Inspection Robot SLAM Evaluation Framework</h2>
+          <div class="project-content">
+            <div class="project-head">
+              <div>
+                <p class="project-meta">KOREAN AIR · 2025.03 — 2026.12</p>
+                <h2>Aircraft Inspection Robot SLAM Evaluation Framework</h2>
+              </div>
             </div>
+            <p>
+              Developed a SLAM evaluation framework for GNSS-denied aircraft inspection environments. The framework combines map consistency
+              against an aircraft design model, segment-wise scan-to-map error analysis, and external-camera robot monitoring to identify when
+              and where localization errors accumulate.
+            </p>
+            <div class="tags small"><span>SLAM Evaluation</span><span>LiDAR</span><span>IoU</span><span>Chamfer Distance</span><span>External Camera</span></div>
           </div>
-          <p>
-            Developed a SLAM evaluation framework for GNSS-denied aircraft inspection environments. The framework combines map consistency
-            against an aircraft design model, segment-wise scan-to-map error analysis, and external-camera robot monitoring to identify when
-            and where localization errors accumulate.
-          </p>
-          <div class="tags small"><span>SLAM Evaluation</span><span>LiDAR</span><span>IoU</span><span>Chamfer Distance</span><span>External Camera</span></div>
         </article>
 
-        <article class="project-card">
+        <article class="project-row">
           <div class="project-photo" aria-label="Traversability project photo placeholder">
             <i class="fa-regular fa-image"></i>
             <span>Traversability project photo</span>
           </div>
-          <div class="project-head">
-            <div>
-              <p class="project-meta">INHA UNIVERSITY · 2025.03 — 2025.07</p>
-              <h2>Off-road Traversability Costmap Framework</h2>
+          <div class="project-content">
+            <div class="project-head">
+              <div>
+                <p class="project-meta">INHA UNIVERSITY · 2025.03 — 2025.07</p>
+                <h2>Off-road Traversability Costmap Framework</h2>
+              </div>
             </div>
+            <p>
+              Converted pixel-wise traversability predictions from synchronized RGB-D and odometry data into a robot-centric 2D costmap for the
+              ROS 2 navigation stack. Reorganized the pipeline into ROS 2 nodes and optimized the PyTorch model through ONNX and TensorRT for Jetson AGX Orin.
+            </p>
+            <div class="project-result">Inference: ~570 ms → ~100 ms · Full costmap pipeline: ~150 ms</div>
+            <div class="tags small"><span>ROS 2</span><span>TensorRT</span><span>Jetson AGX Orin</span><span>Boston Dynamics Spot</span><span>RGB-D</span></div>
           </div>
-          <p>
-            Converted pixel-wise traversability predictions from synchronized RGB-D and odometry data into a robot-centric 2D costmap for the
-            ROS 2 navigation stack. Reorganized the pipeline into ROS 2 nodes and optimized the PyTorch model through ONNX and TensorRT for Jetson AGX Orin.
-          </p>
-          <div class="project-result">Inference: ~570 ms → ~100 ms · Full costmap pipeline: ~150 ms</div>
-          <div class="tags small"><span>ROS 2</span><span>TensorRT</span><span>Jetson AGX Orin</span><span>Boston Dynamics Spot</span><span>RGB-D</span></div>
         </article>
 
-        <article class="project-card">
+        <article class="project-row">
           <div class="project-photo" aria-label="Automated crane project photo placeholder">
             <i class="fa-regular fa-image"></i>
             <span>Automated crane project photo</span>
           </div>
-          <div class="project-head">
-            <div>
-              <p class="project-meta">DRIVE &amp; CONTROL · 2025.03</p>
-              <h2>Automated Crane System for Container Handling</h2>
+          <div class="project-content">
+            <div class="project-head">
+              <div>
+                <p class="project-meta">DRIVE &amp; CONTROL · 2025.03</p>
+                <h2>Automated Crane System for Container Handling</h2>
+              </div>
+              <span class="badge">2nd Author</span>
             </div>
-            <span class="badge">2nd Author</span>
+            <p>
+              Integrated YOLOv10-based container detection, a 6-DoF robot arm, and a custom gripper for automated container alignment and grasping.
+              Camera-to-robot coordinate transformation enabled precise alignment between the manipulator and target containers.
+            </p>
+            <div class="project-result">mAP@50 98% · Recall 96% · 200 trials · Grasp success 93.5%</div>
+            <div class="tags small"><span>YOLOv10</span><span>Manipulation</span><span>Coordinate Transform</span><span>Vision</span></div>
           </div>
-          <p>
-            Integrated YOLOv10-based container detection, a 6-DoF robot arm, and a custom gripper for automated container alignment and grasping.
-            Camera-to-robot coordinate transformation enabled precise alignment between the manipulator and target containers.
-          </p>
-          <div class="project-result">mAP@50 98% · Recall 96% · 200 trials · Grasp success 93.5%</div>
-          <div class="tags small"><span>YOLOv10</span><span>Manipulation</span><span>Coordinate Transform</span><span>Vision</span></div>
         </article>
       </section>
     </section>
