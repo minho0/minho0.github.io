@@ -22,6 +22,20 @@
   border:0;
 }
 
+.project-photo.project-figure{
+  border:1px solid #e4e8ea;
+  background:#fff;
+  padding:8px;
+}
+
+.project-photo.project-figure img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center;
+  border-radius:7px;
+}
+
 @media (max-width:760px){
   .project-media-stack{gap:10px}
 }
