@@ -1,0 +1,27 @@
+.project-media-stack{
+  display:grid;
+  gap:12px;
+  width:100%;
+}
+
+.project-video{
+  position:relative;
+  width:100%;
+  aspect-ratio:16/9;
+  overflow:hidden;
+  border-radius:12px;
+  background:#111;
+  box-shadow:0 5px 18px rgba(0,0,0,.08);
+}
+
+.project-video iframe{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  border:0;
+}
+
+@media (max-width:760px){
+  .project-media-stack{gap:10px}
+}
