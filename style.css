@@ -106,23 +106,43 @@ button{font:inherit}
 .tabs{
   display:flex;
   justify-content:center;
-  gap:7px;
-  padding:0 24px 22px;
+  gap:14px;
+  padding:10px 24px 28px;
   border-bottom:1px solid var(--line);
 }
 .tab{
-  border:0;
-  background:transparent;
-  color:var(--muted);
-  padding:8px 20px;
+  min-width:145px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  border:1px solid #d8e1e6;
+  background:#f8fafb;
+  color:#53616a;
+  padding:13px 24px;
   border-radius:999px;
-  font-size:.92rem;
+  font-size:1.04rem;
   font-weight:700;
   cursor:pointer;
+  box-shadow:0 3px 10px rgba(31,49,58,.05);
   transition:.18s ease;
 }
-.tab:hover{background:var(--soft);color:var(--accent)}
-.tab.is-active{background:var(--accent);color:#fff}
+.tab i{
+  font-size:1rem;
+}
+.tab:hover{
+  background:var(--soft);
+  border-color:#c9d7de;
+  color:var(--accent);
+  transform:translateY(-1px);
+  box-shadow:0 5px 14px rgba(31,49,58,.08);
+}
+.tab.is-active{
+  background:var(--accent);
+  border-color:var(--accent);
+  color:#fff;
+  box-shadow:0 8px 18px rgba(49,88,107,.2);
+}
 
 .panel{display:none;padding:34px 50px 18px}
 .panel.is-active{display:block}
@@ -316,6 +336,8 @@ footer{
   .profile h1{font-size:1.65rem}
   .role{font-size:.96rem}
   .place{font-size:.9rem}
+  .tabs{gap:10px;padding:8px 18px 24px}
+  .tab{min-width:0;flex:1;max-width:170px;padding:12px 16px;font-size:.98rem}
   .panel{padding:28px 24px 10px}
   .info-item{grid-template-columns:1fr;gap:2px;padding:13px 0}
   .info-date{font-size:.8rem}
