@@ -1,278 +1,117 @@
-<!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Minho Lee (이민호) | Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-	</head>
-	<body id="top">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Minho Lee (이민호) | Robotics</title>
+  <meta name="description" content="Minho Lee — Robotics engineer and M.S. student at Inha University working on reliable service-robot systems." />
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<!-- TODO: Replace images/profile2.jpg with your own photo (keep filename for convenience). -->
-					<a href="#top" class="image avatar"><img src="images/profile2.jpg" alt="Minho Lee avatar" /></a>
-					<h1>
-						<strong>Minho Lee (이민호)</strong><br />
-						Robotics Engineer / M.S. Student<br />
-						ROS 2 · Navigation · Mapping · On-device AI
-					</h1>
-				</div>
-			</header>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero" style="background-image:url('images/fulls/01.jpg')"></header>
 
-		<!-- Main -->
-			<div id="main">
+  <main class="page">
+    <section class="profile">
+      <img class="avatar" src="images/profile2.jpg" alt="Minho Lee" />
+      <h1>Minho Lee <span>이민호</span></h1>
+      <p class="role">Robotics Engineer · M.S. Student</p>
+      <p class="place">Inha University · Incheon, South Korea</p>
 
-				<!-- About -->
-					<section id="one">
-						<header class="major">
-							<h2>
-								I build reliable robot systems for real-world autonomy.
-							</h2>
-						</header>
+      <div class="social" aria-label="Links">
+        <a href="https://github.com/minho0" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:mhlee00@inha.edu" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+      </div>
+    </section>
 
-						<p>
-							I work on service-robot software stacks with an emphasis on robust task execution and
-							real-time perception. My interests include ROS 2-based navigation, RGB-D / point-cloud
-							perception, traversability &amp; costmap generation, and behavior-tree-driven task control
-							(with LLM-assisted reasoning where helpful).
-						</p>
+    <nav class="tabs" aria-label="Portfolio sections">
+      <button class="tab is-active" data-panel="about" aria-selected="true">About</button>
+      <button class="tab" data-panel="projects" aria-selected="false">Projects</button>
+    </nav>
 
-						<ul class="actions">
-							<!-- TODO: Put your CV PDF in repo (e.g., /assets/Minho_Lee_CV.pdf) and update the link -->
-							<li><a href="assets/Minho_Lee_CV.pdf" class="button" target="_blank" rel="noopener">Download CV</a></li>
-							<li><a href="#two" class="button">View Projects</a></li>
-							<li><a href="#posts" class="button">View Posts</a></li>
-						</ul>
-					</section>
+    <section class="panel is-active" id="about">
+      <div class="section">
+        <p class="eyebrow">ABOUT</p>
+        <h2>I build reliable robot systems for real-world autonomy.</h2>
+        <p class="lead">
+          I work on service-robot software stacks with an emphasis on robust task execution and real-time perception.
+          My interests include ROS 2-based navigation, RGB-D and point-cloud perception, mapping, and behavior-tree-driven
+          task execution with recovery.
+        </p>
+      </div>
 
-				<!-- Projects -->
-					<section id="two">
-						<h2>Selected Projects</h2>
-						<p>
-							A curated set of projects focusing on navigation, mapping, and robot autonomy.
-							(Replace thumbnails and links with your own.)
-						</p>
+      <div class="section">
+        <p class="eyebrow">INTERESTS</p>
+        <div class="tags">
+          <span>ROS 2 System Integration</span>
+          <span>Behavior Tree</span>
+          <span>Failure Recovery</span>
+          <span>Navigation &amp; Mapping</span>
+          <span>RGB-D / Point Cloud</span>
+          <span>On-device AI</span>
+        </div>
+      </div>
 
-						<div class="row">
-							<!-- Project 1 -->
-							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/fulls/01.jpg" class="image fit thumb">
-									<img src="images/thumbs/01.jpg" alt="RB-Y1 home service robot project" />
-								</a>
-								<h3>RB-Y1 Home-Service Robot System (RoboCup@Home)</h3>
-								<p>
-									End-to-end system integration: perception, navigation, manipulation, and HRI with modular,
-									recoverable task execution.
-								</p>
-								<ul class="actions small">
-									<li><a href="#" class="button small">Repo</a></li>
-									<li><a href="#" class="button small">Video</a></li>
-								</ul>
-							</article>
+      <div class="section split">
+        <div>
+          <p class="eyebrow">HIGHLIGHT</p>
+          <h3>RoboCup@Home 2026</h3>
+          <p>Open Platform League · 4th Place · Team Inha United @Home</p>
+        </div>
+        <div>
+          <p class="eyebrow">CONTACT</p>
+          <h3>mhlee00@inha.edu</h3>
+          <p>Incheon, South Korea</p>
+        </div>
+      </div>
+    </section>
 
-							<!-- Project 2 -->
-							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="images/fulls/02.jpg" class="image fit thumb">
-									<img src="images/thumbs/02.jpg" alt="Traversability to costmap pipeline" />
-								</a>
-								<h3>Traversability → Costmap Pipeline (Jetson / TensorRT)</h3>
-								<p>
-									On-device inference and real-time costmap/occupancy generation from RGB-D data for
-									embedded robots.
-								</p>
-								<ul class="actions small">
-									<li><a href="#" class="button small">Repo</a></li>
-									<li><a href="#" class="button small">Demo</a></li>
-								</ul>
-							</article>
+    <section class="panel" id="projects">
+      <div class="section">
+        <p class="eyebrow">SELECTED PROJECTS</p>
+        <div class="projects">
+          <article class="project">
+            <img src="images/thumbs/01.jpg" alt="RB-Y1 home service robot" loading="lazy" />
+            <div>
+              <h3>RB-Y1 Home-Service Robot System</h3>
+              <p>End-to-end integration of perception, navigation, manipulation, HRI, and recoverable task execution for RoboCup@Home.</p>
+            </div>
+          </article>
 
-							<!-- Project 3 -->
-							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/fulls/03.jpg" class="image fit thumb">
-									<img src="images/thumbs/03.jpg" alt="Hybrid 2D-3D topometric mapping" />
-								</a>
-								<h3>Hybrid 2D–3D Topometric Mapping</h3>
-								<p>
-									Fusion of RGB-D, LiDAR, and odometry for stable navigation and localization in dynamic,
-									cluttered environments.
-								</p>
-								<ul class="actions small">
-									<li><a href="#" class="button small">Repo</a></li>
-									<li><a href="#" class="button small">Slides</a></li>
-								</ul>
-							</article>
+          <article class="project">
+            <img src="images/thumbs/02.jpg" alt="Traversability costmap pipeline" loading="lazy" />
+            <div>
+              <h3>Traversability → Costmap Pipeline</h3>
+              <p>On-device inference and real-time costmap generation from RGB-D data for embedded robotic platforms.</p>
+            </div>
+          </article>
 
-							<!-- Project 4 -->
-							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="images/fulls/04.jpg" class="image fit thumb">
-									<img src="images/thumbs/04.jpg" alt="Behavior tree task execution" />
-								</a>
-								<h3>Behavior Tree Task Execution (with Recovery)</h3>
-								<p>
-									Interpretable high-level control using sequence/fallback/parallel patterns and bounded
-									retries for reliable task completion.
-								</p>
-								<ul class="actions small">
-									<li><a href="#" class="button small">Repo</a></li>
-									<li><a href="#" class="button small">Write-up</a></li>
-								</ul>
-							</article>
+          <article class="project">
+            <img src="images/thumbs/03.jpg" alt="Hybrid 2D 3D mapping" loading="lazy" />
+            <div>
+              <h3>Hybrid 2D–3D Topometric Mapping</h3>
+              <p>RGB-D, LiDAR, and odometry-based mapping for stable localization and navigation in cluttered environments.</p>
+            </div>
+          </article>
 
-							<!-- Project 5 -->
-							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/fulls/05.jpg" class="image fit thumb">
-									<img src="images/thumbs/05.jpg" alt="Dual-arm manipulation modules" />
-								</a>
-								<h3>Dual-Arm Manipulation Modules</h3>
-								<p>
-									Practical modules for arm selection, alignment, and execution pipelines that interface
-									with perception and motion planning.
-								</p>
-								<ul class="actions small">
-									<li><a href="#" class="button small">Repo</a></li>
-									<li><a href="#" class="button small">Demo</a></li>
-								</ul>
-							</article>
+          <article class="project">
+            <img src="images/thumbs/04.jpg" alt="Behavior tree task execution" loading="lazy" />
+            <div>
+              <h3>Behavior Tree Task Execution</h3>
+              <p>Interpretable high-level task control with bounded retries and recovery-oriented execution patterns.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-							<!-- Project 6 -->
-							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="images/fulls/06.jpg" class="image fit thumb">
-									<img src="images/thumbs/06.jpg" alt="Point cloud normals and geometry" />
-								</a>
-								<h3>Point-Cloud Geometry Tools (Normals / Filtering)</h3>
-								<p>
-									Normal estimation and point-cloud processing utilities for robotics perception pipelines.
-								</p>
-								<ul class="actions small">
-									<li><a href="#" class="button small">Repo</a></li>
-									<li><a href="#" class="button small">Notes</a></li>
-								</ul>
-							</article>
-						</div>
+    <footer>© <span id="year"></span> Minho Lee</footer>
+  </main>
 
-						<ul class="actions">
-							<li><a href="other.html" class="button">Full Portfolio</a></li>
-						</ul>
-					</section>
-
-				<!-- Posts / Dev Log -->
-					<section id="posts">
-						<h2>Dev Log / Posts</h2>
-						<p>
-							Short write-ups about robotics development, experiments, and lessons learned.
-						</p>
-
-						<div class="row">
-							<!-- Post 1 -->
-							<article class="6u 12u$(xsmall) work-item">
-								<a href="posts/2026-02-19-traversability.html" class="image fit thumb">
-									<img src="images/thumbs/post-01.jpg" alt="Traversability costmap post thumbnail" />
-								</a>
-								<h3>Traversability → Costmap on Jetson (Latency Notes)</h3>
-								<p>
-									TensorRT inference + RGB-D fusion pipeline, bottlenecks and profiling results.
-								</p>
-								<ul class="actions small">
-									<li><a href="posts/2026-02-19-traversability.html" class="button small">Read</a></li>
-								</ul>
-							</article>
-
-							<!-- Post 2 -->
-							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="posts/2026-02-10-bt-recovery.html" class="image fit thumb">
-									<img src="images/thumbs/post-02.jpg" alt="Behavior tree recovery patterns thumbnail" />
-								</a>
-								<h3>BT Recovery Patterns I Actually Use</h3>
-								<p>
-									Sequence/Fallback/RetryUntilSuccessful patterns for reliable task completion.
-								</p>
-								<ul class="actions small">
-									<li><a href="posts/2026-02-10-bt-recovery.html" class="button small">Read</a></li>
-								</ul>
-							</article>
-						</div>
-
-						<ul class="actions">
-							<li><a href="posts/index.html" class="button">All Posts</a></li>
-						</ul>
-					</section>
-
-				<!-- Contact -->
-					<section id="three">
-						<h2>Contact</h2>
-						<p>
-							Best way to reach me is email. I’m also active on GitHub.
-						</p>
-						<div class="row">
-							<div class="8u 12u$(small)">
-								<!-- NOTE: This contact form does not send mail by default.
-								     Use Formspree or another service if you want it to work. -->
-								<form method="post" action="#">
-									<div class="row uniform 50%">
-										<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										<div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-									</div>
-								</form>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</div>
-
-							<div class="4u$ 12u$(small)">
-								<ul class="labeled-icons">
-									<li>
-										<h3 class="icon fa-map-marker"><span class="label">Location</span></h3>
-										Incheon, South Korea
-									</li>
-									<li>
-										<h3 class="icon fa-university"><span class="label">Affiliation</span></h3>
-										Inha University · Robotics / Autonomous Systems
-									</li>
-									<li>
-										<h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
-										<a href="mailto:mhlee00@inha.edu">mhlee00@inha.edu</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="https://github.com/minho0" class="icon fa-github" target="_blank" rel="noopener"><span class="label">Github</span></a></li>
-						<li><a href="mailto:mhlee00@inha.edu" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-						<li><a href="#" class="icon fa-youtube" target="_blank" rel="noopener"><span class="label">YouTube</span></a></li>
-						<li><a href="#" class="icon fa-linkedin" target="_blank" rel="noopener"><span class="label">LinkedIn</span></a></li>
-					</ul>
-
-					<ul class="copyright">
-						<li>&copy; Minho Lee</li>
-						<li>Design: <a href="http://html5up.net" target="_blank" rel="noopener">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
-	</body>
+  <script src="index.js"></script>
+</body>
 </html>
