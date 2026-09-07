@@ -283,15 +283,13 @@ button{font:inherit}
   line-height:1.4;
 }
 .project-links a{
-  color:var(--accent);
+  color:#2563eb;
   font-weight:700;
-  padding-bottom:1px;
-  border-bottom:1px solid rgba(49,88,107,.34);
+  text-decoration:underline;
+  text-decoration-thickness:1px;
+  text-underline-offset:2px;
 }
-.project-links a:hover{
-  color:#274b5d;
-  border-bottom-color:currentColor;
-}
+.project-links a:hover{color:#1d4ed8}
 .project-links span{color:#b0b5b8}
 
 footer{
